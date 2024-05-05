@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <title>FAQ - Cabinet Ascelpios</title>
+</head>
+<style>
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+
+<body>
+    <div>
+        <header class="bg-white">
+            <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+                <div class="flex lg:flex-1">
+                    <a href="#" class="-m-1.5 p-1.5">
+                        <span class="sr-only">Votre entreprise</span>
+                        <img class="h-20 w-auto" src="images/ascelpios-logo.png" alt="Logo">
+                    </a>
+                </div>
+                <div class="nav-links hidden lg:flex lg:flex-grow lg:gap-x-12">
+                    <a href="index.html" class="text-sm font-semibold leading-6 text-gray-900">Accueil</a>
+                    <div class="dropdown">
+                        <button class="text-sm font-semibold leading-6 text-gray-900 flex items-center gap-x-1">
+                            Thérapie
+                            <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Hirudothérapie</a>
+                            <a href="#">Bio résonance</a>
+                            <a href="kinesiologie.html">Kinésiologie</a>
+                            <a href="#">Nathurothérapie</a>
+                            <a href="#">La trame</a>
+                        </div>
+                    </div>
+                    <a href="faq.html" class="text-sm font-semibold leading-6 text-gray-900">FAQ</a>
+                    <a href="about.html" class="text-sm font-semibold leading-6 text-gray-900">À propos de moi</a>
+                    <a href="services.html" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
+                </div>
+                <a href="contact.html"
+                    class="text-sm font-semibold leading-6 text-red-500 hover:text-red-700 lg:flex lg:flex-1 lg:justify-end">Contactez-moi
+                    <span aria-hidden="true">&rarr;</span></a>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Titre de la page -->
+    <section class="bg-white py-12">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-semibold text-gray-900 text-center">Foire Aux Questions (FAQ)</h1>
+            <p class="mt-4 text-gray-600 text-center">Retrouvez ici les réponses aux questions les plus fréquemment posées concernant le cabinet Ascelpios et ses services.</p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mx-auto py-12">
+        <div class="max-w-3xl mx-auto divide-y divide-gray-200">
+            <h2 class="text-2xl font-semibold text-red-800 mb-8">Questions Fréquemment Posées</h2>
+            <div class="py-8">
+                <h3 class="text-lg font-medium text-gray-900">Quels services proposez-vous au cabinet Ascelpios ?</h3>
+                <p class="mt-4 text-gray-600">Nous offrons une gamme complète de services thérapeutiques, notamment l'hirudothérapie, la bio résonance, la kinésiologie, la naturothérapie et la trame.</p>
+            </div>
+            <div class="py-8">
+                <h3 class="text-lg font-medium text-gray-900">Comment puis-je prendre rendez-vous ?</h3>
+                <p class="mt-4 text-gray-600">Vous pouvez prendre rendez-vous directement via notre site web, en utilisant le service OneDoc, ou en nous contactant par téléphone ou e-mail.</p>
+            </div>
+            <div class="py-8">
+                <h3 class="text-lg font-medium text-gray-900">Quels sont vos horaires d'ouverture ?</h3>
+                <p class="mt-4 text-gray-600">Nous sommes ouverts du lundi au vendredi de 9h à 18h. Le samedi, uniquement sur rendez-vous.</p>
+            </div>
+            <div class="py-8">
+                <h3 class="text-lg font-medium text-gray-900">Quels documents dois-je apporter lors de ma première consultation ?</h3>
+                <p class="mt-4 text-gray-600">Pour la première consultation, veuillez apporter vos documents médicaux pertinents, votre carte d'identité, et les formulaires que nous vous aurons envoyés par e-mail.</p>
+            </div>
+            <div class="py-8">
+                <h3 class="text-lg font-medium text-gray-900">Que traite la kinésiologie ?</h3>
+                <p class="mt-4 text-gray-600">La kinésiologie aide à identifier et corriger les déséquilibres liés au stress, à la posture, aux mouvements, et à d'autres facteurs qui influencent la santé physique et mentale.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <img src="images/ascelpios-logo.png" alt="Logo Kinésiologie" class="h-20 text-white p-2 rounded-full">
+                <span class="ml-3 text-xl">Cabinet Ascelpios</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-6 sm:pl-6 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+                2023 Cabinet Ascelpios —
+                <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+                    target="_blank">@Julien Castro</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a class="text-gray-500">
+                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path
+                            d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                        </path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" class="w-5 h-5"
+                        viewBox="0 0 24 24">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1112.63 8 A4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                    </svg>
+                </a>
+                <a class="ml-3 text-gray-500">
+                    <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="0"
+                        class="w-5 h-5" viewBox="0 0 24 24">
+                        <path stroke="none"
+                            d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                        </path>
+                        <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                    </svg>
+                </a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+</html>
